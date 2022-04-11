@@ -1,6 +1,6 @@
 {
-    "name": "ov-code/flarum-likes",
-    "description": "Allow users to like posts. OV-Code Custom",
+    "name": "runig006/flarum-likes",
+    "description": "Change the like list, to an icon",
     "type": "flarum-extension",
     "version": "1.0.0",
     "keywords": [
@@ -12,7 +12,7 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "Likes (OV-Code Custom)",
+            "title": "Likes List To Icon",
             "category": "feature",
             "icon": {
                 "name": "far fa-thumbs-up",
