@@ -1,0 +1,41 @@
+{
+    "name": "ov-code/flarum-likes",
+    "description": "Allow users to like posts. OV-Code Custom",
+    "type": "flarum-extension",
+    "version": "1.0.0",
+    "keywords": [
+        "discussion"
+    ],
+    "require": {
+        "flarum/core": "^1.2",
+        "flarum/likes": "*"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Likes (OV-Code Custom)",
+            "category": "feature",
+            "icon": {
+                "name": "far fa-thumbs-up",
+                "backgroundColor": "#3A649D",
+                "color": "#fff"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": false,
+                "css": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": false,
+                "bundlewatch": false,
+                "backendTesting": false,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    }
+}
