@@ -14,7 +14,7 @@ export default function () {
       items.add(
         'liked',
         <a href="#" onclick={(e) => { e.preventDefault(); app.modal.show(PostLikesModal,{ post });}}>
-          <div className="Post-likedBy">
+          <div className="FooterItem Post-likedBy">
             {icon('far fa-thumbs-up')}
             {likes.length}
           </div>
