@@ -1,4 +1,5 @@
-.item-liked{
+.item-liked,.item-replies_custom{
+  float:left;
   :hover{
     background-color: var(--link-color);
     color: var(--body-bg);
@@ -9,5 +10,32 @@
   }
   .icon{
     display: inline !important;
+  }
+}
+.item-replies{
+  display: none;
+}
+
+.PostLikesModal-list, .PostMentionsModal-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  a {
+    color: @text-color;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+    &:hover .username {
+      text-decoration: underline;
+    }
+  }
+  .Avatar {
+    .Avatar--size(32px);
+    vertical-align: middle;
+    margin-right: 5px;
   }
 }

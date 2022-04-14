@@ -6,6 +6,7 @@ import NotificationGrid from 'flarum/forum/components/NotificationGrid';
 
 import addLikeAction from './addLikeAction';
 import addLikesList from './addLikesList';
+import addMentionedByList from './addMentionedByList';
 import PostLikedNotification from './components/PostLikedNotification';
 
 app.initializers.add('flarum-likes', () => {
@@ -16,6 +17,7 @@ app.initializers.add('flarum-likes', () => {
 
   addLikeAction();
   addLikesList();
+  addMentionedByList();
 
   extend(NotificationGrid.prototype, 'notificationTypes', function (items) {
     items.add('postLiked', {
