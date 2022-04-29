@@ -16,7 +16,7 @@
             "category": "feature",
             "icon": {
                 "name": "far fa-thumbs-up",
-                "backgroundColor": "#3A649D",
+                "backgroundColor": "#f70",
                 "color": "#fff"
             }
         },

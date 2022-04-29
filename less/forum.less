@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 .item-liked {
   :hover {
+=======
+.item-liked,.item-replies_custom{
+  float:left;
+  :hover{
+>>>>>>> 2fb9b9818ca569c870d0b142bd84d95c1a0fb5e2
     background-color: var(--link-color);
     color: var(--body-bg);
   }
@@ -13,6 +19,7 @@
     display: inline !important;
   }
 }
+<<<<<<< HEAD
 
 .item-like {
   :hover {
@@ -29,3 +36,32 @@
     color: var(--header-control-bg);
   }
 }
+=======
+.item-replies{
+  display: none;
+}
+
+.PostLikesModal-list, .PostMentionsModal-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  a {
+    color: @text-color;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+    &:hover .username {
+      text-decoration: underline;
+    }
+  }
+  .Avatar {
+    .Avatar--size(32px);
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+>>>>>>> 2fb9b9818ca569c870d0b142bd84d95c1a0fb5e2
