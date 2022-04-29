@@ -2,22 +2,19 @@ import { extend } from 'flarum/common/extend';
 import app from 'flarum/forum/app';
 import Button from 'flarum/common/components/Button';
 import CommentPost from 'flarum/forum/components/CommentPost';
+import icon from 'flarum/common/helpers/icon';
 
 export default function () {
   extend(CommentPost.prototype, 'actionItems', function (items) {
     const post = this.attrs.post;
-
     if (post.isHidden() || !post.canLike()) return;
-
     const likes = post.likes();
-
     let isLiked = app.session.user && likes && likes.some((user) => user === app.session.user);
-
     items.add(
       'like',
       Button.component(
         {
-          className: 'Button Button--link',
+          className: isLiked ? 'Button Button--link selected' : 'Button Button--link',
           onclick: () => {
             isLiked = !isLiked;
 
