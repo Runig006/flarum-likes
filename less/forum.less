@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-.item-liked {
+.item-liked,
+.item-replies_custom {
+  float: left;
+
   :hover {
-=======
-.item-liked,.item-replies_custom{
-  float:left;
-  :hover{
->>>>>>> 2fb9b9818ca569c870d0b142bd84d95c1a0fb5e2
     background-color: var(--link-color);
     color: var(--body-bg);
   }
@@ -19,29 +16,13 @@
     display: inline !important;
   }
 }
-<<<<<<< HEAD
 
-.item-like {
-  :hover {
-    color: var(--link-color);
-  }
-  :focus {
-    color: currentColor;
-  }
-  .selected {
-    color: var(--header-control-bg);
-  }
-
-  .selected:focus {
-    color: var(--header-control-bg);
-  }
-}
-=======
-.item-replies{
+.item-replies {
   display: none;
 }
 
-.PostLikesModal-list, .PostMentionsModal-list{
+.PostLikesModal-list,
+.PostMentionsModal-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -53,15 +34,36 @@
     display: block;
     margin-bottom: 10px;
     text-decoration: none;
-
+    text-align: justify;
+    .PostPreview-excerpt{
+      font-weight: normal;
+    }
     &:hover .username {
       text-decoration: underline;
     }
   }
+
   .Avatar {
     .Avatar--size(32px);
     vertical-align: middle;
     margin-right: 5px;
   }
 }
->>>>>>> 2fb9b9818ca569c870d0b142bd84d95c1a0fb5e2
+
+.item-like {
+  :hover {
+    color: var(--link-color);
+  }
+
+  :focus {
+    color: currentColor;
+  }
+
+  .selected {
+    color: var(--header-control-bg);
+  }
+
+  .selected:focus {
+    color: var(--header-control-bg);
+  }
+}
